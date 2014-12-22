@@ -17,6 +17,7 @@ $ sudo yum install rpm-build rpmdevtools
 $ cd autoconf-archive-rpm
 $ spectool -g -R -C SOURCES autoconf-archive.spec
 $ rpmbuild --define "_topdir `pwd`" -bs autoconf-archive.spec
+$ sudo yum-builddep SRPMS/autoconf-archive-<version>.src.rpm
 $ rpmbuild --define "_topdir `pwd`" --rebuild SRPMS/autoconf-archive-<version>.src.rpm
 ```
 * The RPM should be written to RPMS/noarch
