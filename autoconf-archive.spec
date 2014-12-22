@@ -1,6 +1,6 @@
 Name: autoconf-archive
-Version: 2012.09.08
-Release: 4%{?dist}
+Version: 2014.10.15
+Release: 1%{?dist}
 Summary: The Autoconf Macro Archive
 
 Group: Development/Tools
@@ -52,6 +52,9 @@ fi
 %{_infodir}/autoconf-archive.info*
 
 %changelog
+* Mon Dec 22 2014 Jim Sheldon <jim.sheldon@gmail.com> - 2014.10.15-1
+- update to 2014.10.15
+
 * Sat Jun 07 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2012.09.08-4
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
 
