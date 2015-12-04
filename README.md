@@ -9,12 +9,13 @@ This spec is based on sources from [Fedora](https://apps.fedoraproject.org/packa
 
 * Install dependencies
 ```
-$ sudo yum install rpm-build rpmdevtools
+$ sudo yum install rpm-build rpmdevtools yum-utils make
 ```
 * Clone this repository
 * Build the RPM:
 ```
 $ cd autoconf-archive-rpm
+$ mkdir SOURCES
 $ spectool -g -R -C SOURCES autoconf-archive.spec
 $ rpmbuild --define "_topdir `pwd`" -bs autoconf-archive.spec
 $ sudo yum-builddep SRPMS/autoconf-archive-<version>.src.rpm
